@@ -1,0 +1,202 @@
+
+@font-face {
+    font-family: 'Cunia';
+    src: url(./Font/Cunia.otf);
+}
+
+@font-face {    /*  เป็นการสร้างFontในเครื่อง */
+    font-family: 'Pacifico';
+    src: url(./Font/Pacifico-Regular.ttf);
+}
+
+
+body {
+        background-image: url(./picture/11.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        margin: 0px;
+        overflow: hidden;
+  
+}
+    
+
+    ul {
+        z-index:5;position:relative; /* เอาไว้เพื่อใช้ตอนที่ไม่สามารถกดปุ่มได้*/
+        list-style-type: none;
+        background-color: #052F35;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        padding-bottom: 20px;
+
+    }
+
+    li {
+        
+        float: left;
+        font-family: 'Cunia';
+        font-weight: bolder;
+        font-size: 200%;
+    }
+
+    li a {
+        
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    li a:hover {
+        background-color: black;
+
+    }
+
+    a {
+        font-weight: 80px;
+        color: white;
+    }
+
+
+    #motion1 {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        animation-name: cloud;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        margin-top: -1%;
+    }
+
+    @keyframes cloud {    /* keyframe คือ การใช้ในการเคลื่อนไหวภาพ */
+        0% {
+            top: 0px;
+            left: -50px;
+        }
+
+        25% {
+            top: 0px;
+            left: 100x;
+        }
+
+        50% {
+            top: 0px;
+            left: 200px;
+        }
+
+        75% {
+            top: 0px;
+            left: 100px;
+        }
+
+        100% {
+            top: 0px;
+            left: -50px;
+        }
+    }
+
+    #motion2 {
+        width: 250px;
+        height: 200px;
+        position: relative;
+        animation-name: cloud2;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        margin-top: -1%;
+        float: right;
+
+    }
+
+    @keyframes cloud2 {
+        0% {
+            top: 0px;
+            right: -50px;
+        }
+
+        25% {
+            top: 0px;
+            right: 100px;
+        }
+
+        50% {
+            top: 0px;
+            right: 200px;
+        }
+
+        75% {
+            top: 0px;
+            right: 100px;
+        }
+
+        100% {
+            top: 0px;
+            right: -50px;
+        }
+    }
+
+
+
+    @keyframes zoomProfile {
+        from {
+            opacity: 0;
+            transform: scale3d(5, 5, 5) translate3d(100px -1000px, 0);
+            animation-timing-function: cubic-bezier(1, 1, 1, 1);
+        }
+
+        to {
+            opacity: 1;
+            transform: scale3d(0.475, 0.475, 0.475) translate3d(-100, 100px, 0);
+            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+        }
+
+    }
+
+
+
+    .zoomprofile {
+        animation-name: zoomProfile;   /* animation-name คือ ชื่อของAffect */ 
+        animation-duration: 1.5s; /*animation-duration  time ของ Affect */ 
+        font-size: 70px;
+        text-align: center;
+        margin-top: 0em;
+        color: #F8F8FF;
+        text-shadow: 10px 10px 50px yellow, 10px 13px #191970;
+        font-family: 'Pacifico';
+    }
+
+    #wave1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        animation-name:wave1;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+         margin-top: -30em; 
+     }
+     @keyframes wave1 {
+        0%{bottom: 0px;}
+        50%{bottom: 30px;}
+        100%{bottom: 0px;}
+       
+       
+    }
+     
+    #wave2{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        animation-name:wave2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+         margin-top: -40em; 
+     }
+     @keyframes wave2 {
+        0%{bottom: -30px;}
+        50%{bottom: 0px;}
+        100%{bottom: -30px;}
+       
+       
+    }
+  

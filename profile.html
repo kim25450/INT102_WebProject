@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(./picture/bg\ PRo.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-attachment: fixed;
+        margin: 0px;
+        overflow: hidden;
+
+    }
+
+
+    ul {
+        z-index: 5;
+        position: relative;
+        /* เอาไว้เพื่อใช้ตอนที่ไม่สามารถกดปุ่มได้*/
+        list-style-type: none;
+        background-color: #052F35;
+        
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        padding-bottom: 20px;
+
+    }
+
+    li {
+
+        float: left;
+        font-family: 'Cunia';
+        font-weight: bolder;
+        font-size: 200%;
+    }
+
+    li a {
+
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+    li a:hover {
+        background-color: black;
+        color: rgba(255, 238, 0, 0.904);
+    }
+
+    a {
+        font-weight: 80px;
+        color: white;
+    }
+
+    #moon {
+        width: 40%;
+        height: 90%;
+        padding-left: 1100px;
+        margin-top: 0px;
+        position: relative;
+        animation-name: moon;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    @keyframes moon {
+        0% {
+            top: 0px;
+            right: 2%;
+        }
+
+
+        50% {
+            top: 0px;
+            right: 20%;
+        }
+
+
+
+        100% {
+            top: 0px;
+            right: 2%;
+        }
+    }
+  
+
+    #gp{
+        width:30%;
+        height: 30%;
+        margin-top: -300px;
+        margin-left: 40px;
+        animation: moon 15s  linear infinite;
+        border-radius: 50%;
+        
+
+
+    }
+    .gp:hover {
+        box-shadow:0px 0px 50px rgb(238, 197, 62);
+
+    }
+
+</style>
+
+<body>
+    <ul>
+
+        <li><a  href="./home.html">Home</a> </li>
+        <li ><a style="color: yellow;" href="./profile.html">Profile</a> </li>
+        <li><a href="#education">Education</a> </li>
+        <li><a href="#skills">Skills</a> </li>
+        <li><a href="#mycareer">My Carrer</a> </li>
+        <li><a href="#reference">Reference</a> </li>
+        <a href="https://web.facebook.com/SIT.Family" target="_blank">
+            <li style="float: right;padding-right: 20px;"><img src="./picture/1111.png" width="200px;" ; height="80px">
+            </li>
+        </a>
+
+    </ul>
+    <img id="moon" src="./picture2/myprofile.png" alt="moon">
+   
+    <div>
+        <img style="float: left;" id="gp" src="./picture2/profie.png"   alt="gp">
+
+    </div>
+  
+
+
+</body>
+
+</html>
